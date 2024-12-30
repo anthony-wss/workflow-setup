@@ -19,7 +19,7 @@ echo "export VI_MODE_SET_CURSOR=true" >> ~/.zshrc
 sudo apt install -y tmux
 git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm
 echo 'Make sure tmux version > 3.1c'
-# If not, upgrade tmux: https://gist.github.com/nanmu42/97e7d476bbd89301fc74ed23eb0cd65a
+# If not, install tmux from source: https://github.com/tmux/tmux/releases/download/3.4/tmux-3.4.tar.gz
 tmux_conf_content='set-option -sa terminal-overrides "xterm*:Tc"
 set -g mouse on
 
