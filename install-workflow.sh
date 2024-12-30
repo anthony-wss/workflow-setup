@@ -59,6 +59,7 @@ run "~/.tmux/plugins/tpm/tpm"
 '
 
 echo "$tmux_conf_content" > ~/.tmux.conf
+sudo apt install xsel  # tmux-yank dependency
 tmux source ~/.tmux.conf
 echo "Remember to manually run '<tmux-leadkey>+I'"
 
