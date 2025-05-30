@@ -1,0 +1,10 @@
+services:
+  editor:
+    image: editor
+    command: /bin/zsh
+    volumes:
+      - ./:/root/home
+      - ~/.cache:/root/.cache
+      - ~/.local/share:/root/.local/share
+    tty: true
+    stdin_open: true
